@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <DMHotelsFoundation/DMHotelsFoundation.h>
 
 @interface AppDelegate ()
 
@@ -16,7 +17,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle bundleForClass:[DMHotelsSearchViewController class]]];
+    UIViewController  *initialViewController = [mainStoryboard instantiateInitialViewController];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = initialViewController;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
