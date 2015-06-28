@@ -18,10 +18,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle bundleForClass:[DMHotelsSearchViewController class]]];
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"DMHotelsMain" bundle:[NSBundle bundleForClass:[DMHotelsSearchViewController class]]];
     UIViewController  *initialViewController = [mainStoryboard instantiateInitialViewController];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = initialViewController;
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:initialViewController];
+    self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     return YES;
 }
