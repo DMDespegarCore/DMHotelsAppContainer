@@ -1,3 +1,3 @@
 # DMHotelsAppContainer
 
-- This is a sample framework to test framework based modularization.
+- This is a sample sub app container to test framework based modularization.
