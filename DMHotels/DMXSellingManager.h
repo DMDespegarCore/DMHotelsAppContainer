@@ -7,8 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DMHotelXSellingProtocol.h"
+#import <DMHotelsFoundation/DMHotelsFoundation.h>
 
 @interface DMXSellingManager : NSObject <DMHotelXSellingProtocol>
+
++ (instancetype) sharedManager;
 
 @end

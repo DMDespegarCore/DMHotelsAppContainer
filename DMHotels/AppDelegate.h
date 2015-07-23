@@ -7,12 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <DMHotelsFoundation/DMXSellingManager.h>
+#import <DMHotelsFoundation/DMHotelsFoundation.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, DMHotelSellingProvider>
 
 @property (strong, nonatomic) UIWindow *window;
 
-- (DMXSellingManager *)xSellingManager;
 @end
 

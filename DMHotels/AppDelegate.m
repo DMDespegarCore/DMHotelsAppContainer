@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import <DMHotelsFoundation/DMHotelsFoundation.h>
+#import "DMXSellingManager.h"
 
 @interface AppDelegate ()
 
@@ -49,7 +49,8 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
-- (DMXSellingManager *)xSellingManager {
+
+- (id <DMHotelXSellingProtocol>) xSelling {
     return [DMXSellingManager sharedManager];
 }
 

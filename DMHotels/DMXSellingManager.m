@@ -11,8 +11,18 @@
 
 @implementation DMXSellingManager
 
++(instancetype) sharedManager {
+    static dispatch_once_t onceToken;
+    static DMXSellingManager *mngr = nil;
+    dispatch_once(&onceToken, ^{
+        mngr = [[DMXSellingManager alloc] init];
+    });
+    
+    return mngr;
+}
+
 - (void) boughtHotel:(NSDictionary *)hotelInfo {
-    NSLog(@"cross selling a vuelos");
+    NSLog(@"la la la");
 }
 
 @end
