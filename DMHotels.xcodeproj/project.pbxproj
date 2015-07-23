@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C320FD7A1B4079DE000569CE /* DMHotelsFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C320FD791B4079DE000569CE /* DMHotelsFoundation.framework */; };
+		0F0EC7031B61260600237314 /* DMHotelsFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C320FD791B4079DE000569CE /* DMHotelsFoundation.framework */; };
+		0F0EC72B1B613AC600237314 /* DMXSellingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0EC72A1B613AC600237314 /* DMXSellingManager.m */; };
+		0F0EC72F1B613B0500237314 /* DMHotelsAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0EC72D1B613B0500237314 /* DMHotelsAssembly.m */; };
 		C3D8F1041B4067A300BF40FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D8F1031B4067A300BF40FF /* main.m */; };
 		C3D8F1071B4067A300BF40FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D8F1061B4067A300BF40FF /* AppDelegate.m */; };
 		C3D8F10F1B4067A300BF40FF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3D8F10E1B4067A300BF40FF /* Images.xcassets */; };
@@ -26,6 +28,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F0EC7291B613AC600237314 /* DMXSellingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMXSellingManager.h; sourceTree = "<group>"; };
+		0F0EC72A1B613AC600237314 /* DMXSellingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMXSellingManager.m; sourceTree = "<group>"; };
+		0F0EC72C1B613B0500237314 /* DMHotelsAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMHotelsAssembly.h; sourceTree = "<group>"; };
+		0F0EC72D1B613B0500237314 /* DMHotelsAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMHotelsAssembly.m; sourceTree = "<group>"; };
 		C320FD791B4079DE000569CE /* DMHotelsFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DMHotelsFoundation.framework; path = "/Users/matiasservetto/Documents/XcodeWorkspace/FrameworksSample/DMHotelsFoundation/build/Debug-iphoneos/DMHotelsFoundation.framework"; sourceTree = "<absolute>"; };
 		C3D8F0FE1B4067A300BF40FF /* DMHotels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMHotels.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3D8F1021B4067A300BF40FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C320FD7A1B4079DE000569CE /* DMHotelsFoundation.framework in Frameworks */,
+				0F0EC7031B61260600237314 /* DMHotelsFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +64,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F0EC72E1B613B0500237314 /* Assemblies */ = {
+			isa = PBXGroup;
+			children = (
+				0F0EC72C1B613B0500237314 /* DMHotelsAssembly.h */,
+				0F0EC72D1B613B0500237314 /* DMHotelsAssembly.m */,
+			);
+			name = Assemblies;
+			path = ../../DMHotelsFoundation/DMHotelsFoundation;
+			sourceTree = "<group>";
+		};
 		C3D8F0F51B4067A300BF40FF = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +96,9 @@
 		C3D8F1001B4067A300BF40FF /* DMHotels */ = {
 			isa = PBXGroup;
 			children = (
+				0F0EC72E1B613B0500237314 /* Assemblies */,
+				0F0EC7291B613AC600237314 /* DMXSellingManager.h */,
+				0F0EC72A1B613AC600237314 /* DMXSellingManager.m */,
 				C3D8F1051B4067A300BF40FF /* AppDelegate.h */,
 				C3D8F1061B4067A300BF40FF /* AppDelegate.m */,
 				C3D8F10E1B4067A300BF40FF /* Images.xcassets */,
@@ -223,7 +242,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3D8F1071B4067A300BF40FF /* AppDelegate.m in Sources */,
+				0F0EC72F1B613B0500237314 /* DMHotelsAssembly.m in Sources */,
 				C3D8F1041B4067A300BF40FF /* main.m in Sources */,
+				0F0EC72B1B613AC600237314 /* DMXSellingManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +367,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../**",
+					"/Users/matiasservetto/Documents/XcodeWorkspace/FrameworksSample/DMHotelsFoundation/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = DMHotels/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -360,6 +382,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../**",
+					"/Users/matiasservetto/Documents/XcodeWorkspace/FrameworksSample/DMHotelsFoundation/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = DMHotels/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

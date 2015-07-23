@@ -43,5 +43,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    <key>TyphoonInitialAssemblies</key>
+    <array>
+        <string>DMHotelsAssembly</string>
+    </array>
 </dict>
 </plist>
